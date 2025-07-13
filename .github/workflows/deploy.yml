@@ -21,20 +21,16 @@ jobs:
           cache-dependency-path: website/package-lock.json
 
       - name: Install dependencies
-        working-directory: website
         run: npm install
 
       - name: Build
-        working-directory: website
-        env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
         run: npm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           # point at the build output inside your website dir
-          path: website/build/
+          path: build/
 
   deploy:
     needs: build_site
