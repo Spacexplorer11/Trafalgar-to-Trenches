@@ -17,19 +17,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: website/package-lock.json
+          cache: bun
+          cache-dependency-path: bun.lock
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: Build
-        run: npm run build
+        run: bun run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # point at the build output inside your website dir
+          name: github-pages
           path: build/
 
   deploy:
