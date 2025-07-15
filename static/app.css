@@ -2,3 +2,12 @@ html, body {
     margin: 0;
     background-color: #f4e2cb;
 }
+
+body.blurred {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+}
+
+body.blurred .credits-overlay {
+    display: block;
+}

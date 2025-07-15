@@ -1,13 +1,44 @@
 <script>
+	import { onMount, tick } from 'svelte';
+	import { fade } from 'svelte/transition';
+
+	let showTrafalgar = false;
+	let showTo = false;
+	let showTrenches = false;
+
+	onMount(async () => {
+		showTrafalgar = true;
+		await tick();
+		await new Promise(res => setTimeout(res, 500));
+
+		showTo = true;
+		await tick();
+		await new Promise(res => setTimeout(res, 500));
+
+		showTrenches = true;
+	});
 </script>
 <div id="content">
-	<div id="trafalgar">
-		<h1><em id="TrafalgarTitle">Trafalgar</em></h1>
-	</div>
-	<h1 id="to">to</h1>
-	<div id="ww1">
-		<h1><em id="TrenchesTitle">Trenches</em></h1>
-	</div>
+	{#if showTrafalgar}
+		<div id="trafalgar" in:fade={{ duration: 1000 }}>
+			<h1>
+				<em id="TrafalgarTitle">Trafalgar</em>
+			</h1>
+			<img src="/images/battle-of-trafalgar.jpg" alt="Battle of Trafalgar" aria-label="Battle of Trafalgar" title="Battle of Trafalgar" />
+		</div>
+	{/if}
+
+	{#if showTo}
+		<h1 in:fade={{ duration: 1000 }} id="to">to</h1>
+	{/if}
+
+	{#if showTrenches}
+		<div id="ww1" in:fade={{ duration: 1000 }}>
+			<h1>
+				<em id="TrenchesTitle">Trenches</em>
+			</h1>
+		</div>
+	{/if}
 </div>
 <style>
 	#content::before {
@@ -47,6 +78,12 @@
 	#trafalgar {
 		width: 50%;
 		position: relative;
+	}
+
+	#trafalgar img {
+		max-width: 100%;
+		height: auto;
+		display: block;
 	}
 
 	#ww1 {

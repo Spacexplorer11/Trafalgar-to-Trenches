@@ -41,3 +41,9 @@ You can preview the production build with `npm run preview`.
 # Trafalgar-to-Trenches
 A school history project about the Battle of Trafalgar and World War One
 
+# Licensing
+All images have been sourced ethically and their respective licenses are listed below with links to their sources.
+
+## Images
+- [Battle of Trafalgar](/static/images/battle-of-trafalgar.jpg) by [William Clarkson Stanfield](https://picryl.com/media/the-battle-of-trafalgar-by-william-clarkson-stanfield-81f8b3) - Public Domain
+- The i & x icon were made by me in [Figma](https://figma.com).
