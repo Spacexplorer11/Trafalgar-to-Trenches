@@ -25,6 +25,7 @@
 				<em id="TrafalgarTitle">Trafalgar</em>
 			</h1>
 			<div class="image-wrapper">
+				<a class="fake-link" href="/trafalgar" aria-label="Battle of Trafalgar information page"></a>
 				<img src="/images/battle-of-trafalgar.jpg" alt="Battle of Trafalgar" aria-label="Battle of Trafalgar" title="Battle of Trafalgar" />
 				<div class="overlay">
 					<a href="/trafalgar" aria-label="Battle of Trafalgar information page">
@@ -45,6 +46,7 @@
 				<em id="TrenchesTitle">Trenches</em>
 			</h1>
 			<div class="image-wrapper">
+				<a class="fake-link" href="/ww1" aria-label="World War One information page"></a>
 				<img src="/images/infantry-trenches.jpg" alt="Infantry Trenches" aria-label="Infantry Trenches" title="Infantry Trenches" />
 				<div class="overlay">
 					<a href="/ww1" aria-label="World War One information page">
@@ -107,12 +109,43 @@
 		height: 95vh;
 	}
 
+	#trafalgar .image-wrapper .fake-link:hover + img {
+		transform: translateX(-100%);
+	}
+
 	/* World War 1 Section */
 
 	#ww1 {
 		width: 50%;
 		position: relative;
 		height: 95vh;
+	}
+
+	#ww1 .image-wrapper .fake-link:hover + img {
+		transform: translateX(100%);
+	}
+
+	#TrenchesTitle {
+		text-align: center;
+	}
+
+	/* Cool Animation stuff */
+
+	/* Initially hide button */
+	.overlay {
+		position: absolute;
+		bottom: 40%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60%;
+		height: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		z-index: 2;
+		pointer-events: none;
 	}
 
 	.image-wrapper {
@@ -134,21 +167,10 @@
 		display: block;
 	}
 
-	#trafalgar .image-wrapper:hover img {
-		transform: translateX(-100%);
-	}
-
-	#ww1 .image-wrapper:hover img {
-		transform: translateX(100%);
-	}
-
-	.overlay {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		z-index: 1;
+	/* When hover zone hovered, show button */
+	.fake-link:hover ~ .overlay {
+		opacity: 1;
+		pointer-events: auto;
 	}
 
 	.overlay button {
@@ -161,17 +183,31 @@
 		border: 2px solid black;
 		border-radius: 5px;
 		width: 100%;
-		max-width: 300px;
+		max-width: 100%;
+		height: auto;
 		display: block;
 		cursor: pointer;
+		pointer-events: none; /* Make button non-interactive */
 	}
 
 	.overlay button:hover {
 		transform: scale(1.05);
 	}
 
-	#TrenchesTitle {
-		text-align: center;
+	/* The fake-link covers the hover zone area and is transparent */
+	.fake-link {
+		position: absolute;
+		bottom: 40%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		height: 25%;
+		cursor: pointer;
+		background: transparent;
+		z-index: 3;
+		display: block;
+		opacity: 0;
+		pointer-events: auto;
 	}
 
 </style>

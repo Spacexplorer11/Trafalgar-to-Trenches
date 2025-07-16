@@ -46,5 +46,5 @@ All images have been sourced ethically and their respective licenses are listed 
 
 ## Images
 - [Battle of Trafalgar](/static/images/battle-of-trafalgar.jpg) by [William Clarkson Stanfield](https://picryl.com/media/the-battle-of-trafalgar-by-william-clarkson-stanfield-81f8b3) - Public Domain
-- The i & x icon were made by me in [Figma](https://figma.com).
+- The i, x & home icon were made by me in [Figma](https://figma.com).
 - [Infantry Trenches](/static/images/infantry-trenches.jpg) by [WikiImages](https://pixabay.com/photos/infantry-trench-ground-forces-62825/) - [Pixabay License](https://pixabay.com/service/license-summary/)

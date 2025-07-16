@@ -11,7 +11,7 @@ import { Info } from '$lib/components';
 	.national-park {
 		                font-family: "National Park", sans-serif;
 		                font-optical-sizing: auto;
-		                font-weight: 800;
+		                font-weight: 600;
 		                font-style: normal;
 	                }
 </style>
