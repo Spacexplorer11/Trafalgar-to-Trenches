@@ -37,6 +37,7 @@
 			<h1>
 				<em id="TrenchesTitle">Trenches</em>
 			</h1>
+			<img src="/images/infantry-trenches.jpg" alt="Infantry Trenches" aria-label="Infantry Trenches" title="Infantry Trenches" />
 		</div>
 	{/if}
 </div>
@@ -78,6 +79,7 @@
 	#trafalgar {
 		width: 50%;
 		position: relative;
+		height: 95vh;
 	}
 
 	#trafalgar img {
@@ -89,6 +91,16 @@
 	#ww1 {
 		width: 50%;
 		position: relative;
+		overflow: hidden;
+		height: 95vh;
+	}
+
+	#ww1 img {
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
 	}
 
 	#TrenchesTitle {

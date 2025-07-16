@@ -79,12 +79,12 @@
 	#close-button {
 		position: absolute;
 		top: 5px;
-		right: 30px;
+		right: 10%;
 		background: none;
 		border: none;
 		cursor: pointer;
-		width: clamp(24px, 4vmin, 32px);
-		height: clamp(24px, 4vmin, 32px);
+		width: clamp(16px, 2vmin, 24px);
+		height: clamp(16px, 2vmin, 24px);
 		padding: 2px;
 		touch-action: manipulation;
 	}
