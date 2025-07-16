@@ -1,5 +1,5 @@
 <script>
-import Info from '$lib/Info.svelte';
+import { Info } from '$lib/components';
 </script>
 
 <div class="national-park">

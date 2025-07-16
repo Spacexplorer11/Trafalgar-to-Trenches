@@ -78,13 +78,20 @@
 	#close-button {
 		position: absolute;
 		top: 5px;
-		right: 10%;
+		right: 2%;
 		background: none;
 		border: none;
 		cursor: pointer;
-		width: clamp(16px, 2vmin, 24px);
-		height: clamp(16px, 2vmin, 24px);
+		width: clamp(32px, 5vmin, 48px);
+		height: clamp(32px, 5vmin, 48px);
 		padding: 2px;
 		touch-action: manipulation;
+	}
+
+	#close-button img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		display: block;
 	}
 </style>
