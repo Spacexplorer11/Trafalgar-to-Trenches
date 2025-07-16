@@ -63,7 +63,6 @@
 	.credits-overlay.visible {
 		visibility: visible;
 		opacity: 1;
-		backdrop-filter: blur(8px);
 	}
 
 	@media (max-width: 480px) {
