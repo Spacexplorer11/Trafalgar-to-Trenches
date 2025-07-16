@@ -27,7 +27,9 @@
 			<div class="image-wrapper">
 				<img src="/images/battle-of-trafalgar.jpg" alt="Battle of Trafalgar" aria-label="Battle of Trafalgar" title="Battle of Trafalgar" />
 				<div class="overlay">
+					<a href="/trafalgar" aria-label="Battle of Trafalgar information page">
 					<button>More Information</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -45,7 +47,9 @@
 			<div class="image-wrapper">
 				<img src="/images/infantry-trenches.jpg" alt="Infantry Trenches" aria-label="Infantry Trenches" title="Infantry Trenches" />
 				<div class="overlay">
+					<a href="/ww1" aria-label="World War One information page">
 					<button>More Information</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -72,6 +76,10 @@
 		flex-direction: row;
 		position: relative;
 		min-height: 100vh;
+	}
+
+	#content a {
+		text-decoration: none;
 	}
 
 	/* To */
