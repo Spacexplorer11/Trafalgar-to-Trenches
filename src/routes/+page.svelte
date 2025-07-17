@@ -21,8 +21,8 @@
 <div id="content">
 	{#if showTrafalgar}
 		<div id="trafalgar" in:fade={{ duration: 1000 }}>
-			<h1>
-				<em id="TrafalgarTitle">Trafalgar</em>
+			<h1 id="TrafalgarTitle">
+				<em>Trafalgar</em>
 			</h1>
 			<div class="image-wrapper">
 				<a class="fake-link" href="/trafalgar" aria-label="Battle of Trafalgar information page"></a>
@@ -42,8 +42,8 @@
 
 	{#if showTrenches}
 		<div id="ww1" in:fade={{ duration: 1000 }}>
-			<h1>
-				<em id="TrenchesTitle">Trenches</em>
+			<h1 id="TrenchesTitle">
+				<em>Trenches</em>
 			</h1>
 			<div class="image-wrapper">
 				<a class="fake-link" href="/ww1" aria-label="World War One information page"></a>
