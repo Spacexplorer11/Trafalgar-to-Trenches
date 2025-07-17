@@ -40,6 +40,7 @@ You can preview the production build with `npm run preview`.
 -->
 # Trafalgar-to-Trenches
 A school history project about the Battle of Trafalgar and World War One
+![Hackatime](https://hackatime-badge.hackclub.com/U08D22QNUVD/trafalgar-to-trenches)
 
 # Licensing
 All images have been sourced ethically and their respective licenses are listed below with links to their sources.
