@@ -39,7 +39,8 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 -->
 # Trafalgar-to-Trenches
-A school history project about the Battle of Trafalgar and World War One
+A school history project about the Battle of Trafalgar and World War One  
+Please check it out at [trafalgar-to-trenches.akaalroop.com](https://trafalgar-to-trenches.akaalroop.com)  
 ![Hackatime](https://hackatime-badge.hackclub.com/U08D22QNUVD/trafalgar-to-trenches)
 
 # Licensing
