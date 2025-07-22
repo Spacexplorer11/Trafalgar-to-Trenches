@@ -1,6 +1,6 @@
 <script>
-	import { onMount, tick } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import {onMount, tick} from 'svelte';
+	import {fade} from 'svelte/transition';
 
 	let showTrafalgar = false;
 	let showTo = false;
@@ -26,10 +26,11 @@
 			</h1>
 			<div class="image-wrapper">
 				<a class="fake-link" href="/trafalgar" aria-label="Battle of Trafalgar information page"></a>
-				<img src="/images/battle-of-trafalgar.jpg" alt="Battle of Trafalgar" aria-label="Battle of Trafalgar" title="Battle of Trafalgar" />
+				<img src="/images/battle-of-trafalgar.jpg" alt="Battle of Trafalgar" aria-label="Battle of Trafalgar"
+				     title="Battle of Trafalgar"/>
 				<div class="overlay">
 					<a href="/trafalgar" aria-label="Battle of Trafalgar information page">
-					<button>More Information</button>
+						<button>More Information</button>
 					</a>
 				</div>
 			</div>
@@ -47,10 +48,11 @@
 			</h1>
 			<div class="image-wrapper">
 				<a class="fake-link" href="/ww1" aria-label="World War One information page"></a>
-				<img src="/images/infantry-trenches.jpg" alt="Infantry Trenches" aria-label="Infantry Trenches" title="Infantry Trenches" />
+				<img src="/images/infantry-trenches.jpg" alt="Infantry Trenches" aria-label="Infantry Trenches"
+				     title="Infantry Trenches"/>
 				<div class="overlay">
 					<a href="/ww1" aria-label="World War One information page">
-					<button>More Information</button>
+						<button>More Information</button>
 					</a>
 				</div>
 			</div>

@@ -2,8 +2,8 @@
 </script>
 
 <button>
-	<a href="/" aria-label="Home">
-		<img src="/images/home.svg" alt="Button to return to the home page" title="Home button"/>
+	<a aria-label="Home" href="/">
+		<img alt="Button to return to the home page" src="/images/home.svg" title="Home button"/>
 	</a>
 </button>
 <style>

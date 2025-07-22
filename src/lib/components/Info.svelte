@@ -6,14 +6,16 @@
 	}
 </script>
 
-<button id="credits-button" on:click={togglePopup} aria-label="Show credits" title="Show credits">
-	<img src="/images/info.svg" alt="Info icon" />
+<button aria-label="Show credits" id="credits-button" on:click={togglePopup} title="Show credits">
+	<img alt="Info icon" src="/images/info.svg"/>
 </button>
 
 <div class="credits-overlay" class:visible={open}>
-	<p>All attributions and credits are available in the <a href="https://github.com/spacexplorer11/trafalgar-to-trenches#readme#Licenses" target="_blank">README</a>.</p>
-	<button on:click={togglePopup} id="close-button" aria-label="Close credits" title="Close credits">
-		<img src="/images/close.svg" alt="Close icon" />
+	<p>All attributions and credits are available in the <a
+			href="https://github.com/spacexplorer11/trafalgar-to-trenches#readme#Licenses" target="_blank">README</a>.
+	</p>
+	<button aria-label="Close credits" id="close-button" on:click={togglePopup} title="Close credits">
+		<img alt="Close icon" src="/images/close.svg"/>
 	</button>
 </div>
 
@@ -46,7 +48,7 @@
 		transform: translate(-50%, -50%);
 		padding: 1.5rem;
 		border-radius: 8px;
-		box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 		z-index: 1100;
 		visibility: hidden;
 		display: flex;

@@ -1,5 +1,5 @@
 <script>
-import { Home } from "$lib/components";
+	import {Home} from "$lib/components";
 </script>
 
 <Home/>
