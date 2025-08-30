@@ -22,7 +22,7 @@
 <style>
 	#credits-button {
 		position: fixed;
-		top: 10px;
+		top: -5px;
 		left: 10px;
 		background: none;
 		border: none;

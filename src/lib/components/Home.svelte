@@ -9,7 +9,7 @@
 <style>
 	button {
 		position: fixed;
-		top: 10px;
+		top: -5px;
 		right: 10px;
 		background: none;
 		border: none;
