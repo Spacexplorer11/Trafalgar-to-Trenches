@@ -60,11 +60,11 @@
 		</div>
 	{/if}
 </div>
-<div style="position: absolute; top: 30px; left: 10px; z-index: 1000;">
+<div style="position: absolute; top: 30px; left: 10px; z-index: 10;">
 	<iframe height="32" src="https://github.com/sponsors/Spacexplorer11/button" style="border: 0; border-radius: 6px;"
 	        title="Sponsor Spacexplorer11" width="114"></iframe>
 </div>
-<div style="position: absolute; top: 10px; right: 10px; z-index: 1000;">
+<div style="position: absolute; top: 10px; right: 10px; z-index: 10;">
 	<a href="https://www.buymeacoffee.com/spacexplorer11" style="cursor: pointer;" target="_blank">
 		<img alt="Buy Me A Coffee" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
 		     style="height: 60px !important;width: 217px !important;">
@@ -90,6 +90,7 @@
 		display: flex;
 		flex-direction: row;
 		position: relative;
+		margin-top: 50px;
 		min-height: 100vh;
 	}
 
