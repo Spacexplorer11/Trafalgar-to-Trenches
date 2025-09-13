@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "@sveltejs/adapter-cloudflare": "^7.2.3",
-    "@sveltejs/adapter-static": "^3.0.8"
+    "@sveltejs/adapter-static": "^3.0.9"
   }
 }
